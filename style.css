@@ -1,0 +1,298 @@
+:root{
+    --bkg-color: white;
+    --text-color: black;
+   
+    --text-shadow: 2px 2px rgb(20,145,155);
+    --border-color: rgb(20,145,155);
+
+    /* Links */
+    --a1-bgc: rgb(20,145,155);
+    --a1-tc: black;
+    
+
+    --a2-bgc: rgb(20,145,155);
+    --ah2-bgc: rgb(33,58,87);
+
+    
+    /* Oben / Unten */
+
+    --bgc-oben-unten: rgb(33,58,87);
+    --a3-bgc: rgb(33,58,87);
+    --ah3-bgc: rgb(20,145,155);
+    --a3-tc: white;
+    --ah3-tc: black;
+  
+}
+
+.darkTheme{
+  
+  --bkg-color: rgb(56, 56, 56);
+  --text-color: white;
+ 
+  --text-shadow: 2px 2px rgb(10,209,200);
+  --border-color: rgb(33,58,87);
+
+   /* Links */
+  --a1-bgc: rgb(10,209,200);
+  --a1-tc: white;
+
+  --a2-bgc: rgb(33,58,87);
+  --ah2-bgc: rgb(10,209,200);
+  
+
+  /* Oben / Unten */
+
+  --bgc-oben-unten: rgb(33,58,87);
+  --a3-bgc: rgb(33,58,87);
+  --ah3-bgc: rgb(10,209,200);
+  --a3-tc: white;
+  --ah3-tc: white;
+  
+}
+
+
+
+* {
+  font-family: Monaco, monospace; 
+}
+
+body{
+  background: var(--bkg-color); 
+  margin: 0;
+}
+
+
+
+h3 {
+  color: var(--text-color);
+  
+    font-size: 200%;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+
+}
+
+h5{
+    color: var(--text-color);
+
+    font-size: 125%;
+    margin-left: 1.5cm;
+
+}
+
+h4{
+  color:var(--text-color);
+
+  font-size: 150%;
+  margin-left: 1.5cm;
+
+}
+
+p {
+  color: var(--text-color);
+  
+    margin-left: 1.5cm;
+
+}
+
+#border {
+   border-style: solid none solid solid;
+   border-width:auto;
+   border-top-width: 1cm;
+   border-left-width: 1cm;
+   border-bottom-width: 1cm;
+   border-color: var(--border-color);
+   
+}
+
+
+/* LINK 1*/
+  a.one:link, a.one:visited {
+    background-color: var(--a1-bgc);
+    color: var(--a1-tc);
+    
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+  }
+
+ 
+
+/* LINK 2*/
+  a.two:link, a.two:visited {
+   
+    background-color:var(--a2-bgc);
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a.two:hover, a.two:active {
+    background-color:var(--ah2-bgc);
+  } 
+/* LINK 3*/
+  a.three:link, a.three:visited {
+
+    background-color:var(--a3-bgc);
+    color: var(--a3-tc);
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a.three:hover, a.three:active {
+    
+    background-color:var(--ah3-bgc);
+    
+    color: var(--ah3-tc);
+    
+    
+  } 
+
+  a.four:link, a.four:visited {
+
+    background-color: var(--a3-bgc);
+    color: white;
+    padding: 7px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+
+  a.four:hover, a.four:active {
+    
+    color: black;
+    
+  } 
+
+  /* Link 5 */
+  a.five:link, a.five:visited {
+
+    text-decoration: none;
+    color: var(--a1-tc);
+ 
+  }
+
+  a.five:hover, a.five:active {
+    
+    color: var(--a1-bgc);
+    text-decoration: none;
+  } 
+
+  picture{
+    float: right;
+  }
+
+img{
+  float: right;
+  width: 25%;
+  height: auto;
+  filter: none;
+
+}
+
+ul.oben{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color:var(--bgc-oben-unten);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+ul.unten{
+  background-color:var(--bgc-oben-unten);
+  list-style-type: none;
+  
+  padding: 1%;
+  overflow: hidden;
+  margin: 0;
+  
+}
+
+ul.daten{
+  background-color:var(--bgc-oben-unten);
+  list-style-type: none;
+  
+  padding: 1%;
+  overflow: hidden;
+  margin: 0;
+  
+}
+
+ul.daten2 {
+  color: var(--ah3-tc);
+}
+
+
+
+li.oben{
+  float: left;
+}
+
+li.unten{
+  padding: 0;
+}
+
+li.daten{
+  padding: 0;
+}
+
+
+li a {
+  display: block;
+  
+  
+  color: var(--a3-tc);
+  text-align: center; 
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: var(--a3h-bgc);
+  
+}
+
+
+
+address {
+  color: var(--text-color);
+
+  margin-left: 1.5cm;
+
+}
+
+i {
+  color: white;
+  padding: 0;
+
+}
+
+#right{
+  float: right;
+  width: 200px;
+}
+
+
+button{
+  background-color:var(--a3-bgc);
+  
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: none;
+    margin-top: 5px;
+    
+    
+
+}
+
